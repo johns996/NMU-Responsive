@@ -32,4 +32,4 @@ Steps to Create/Update this Rip
 22. Remove mega generator tag
 23. Remove canonical tag
 24. Remove skip-link div
-25. Add Comments for easy finding: page branding, top navigation and page content.  
+25. Add Comments for easy finding: page title, page branding, top navigation and page content.  
