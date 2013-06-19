@@ -5,9 +5,9 @@ This *template* is  just a boilerplate file to be used on pages and forms that c
 
 It is **strongly** recommended that edits are only applied to the following regions:
 + page title
-	>use this region to identify your pages in bookmarks and search engines.  
-	>it should always follow the format: Page Name | Northern Michigan University  
-	>or using the a department's name: Page Name | NMU Administrative Information Technology  
+	use this region to identify your pages in bookmarks and search engines.  
+	it should always follow the format: Page Name | Northern Michigan University  
+	or using the a department's name: Page Name | NMU Administrative Information Technology  
 
 + page branding
 + + use this region to identify the department associated with the content
