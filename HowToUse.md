@@ -5,29 +5,29 @@ This *template* is  just a boilerplate file to be used on pages and forms that c
 
 It is **strongly** recommended that edits are only applied to the following regions:
 + page title
-	>use this region to identify your pages in bookmarks and search engines.
-	>it should always follow the format: Page Name | Northern Michigan University
-	>or using the a department's name: Page Name | NMU Administrative Information Technology
+	>use this region to identify your pages in bookmarks and search engines.  
+	>it should always follow the format: Page Name | Northern Michigan University  
+	>or using the a department's name: Page Name | NMU Administrative Information Technology  
 
 + page branding
-+ + use this region to identify the department associated with the content
-++ this region will also contain links back to the department's homepage and the university's homepage
-++ use the class **main_title** for the main page title
-++ use the class **sub_titles** for the department homepage link and the NMU link
-++ these classes are read by the page's javascript and used in the mobile layout
-+++there should only be one main title on any page
-+++only the first sub title element will be read and stored for the mobile home link
+	>use this region to identify the department associated with the content  
+	>this region will also contain links back to the department's homepage and the university's homepage  
+	>use the class **main_title** for the main page title  
+	>use the class **sub_titles** for the department homepage link and the NMU link  
+	>these classes are read by the page's javascript and used in the mobile layout  
+	>there should only be one main title on any page  
+	>only the first sub title element will be read and stored for the mobile home link  
 
 + top navigation
-++ use this region to provide top level navigation for the page.
-++ no classes are needed for this region.  simply put everything in an unsorted list.
-++ this navigation should reflect the associated department's top navigation
-++ navigation snippets for commonly used departments are stored in the **top_navigation** folder
-++ when creating custom navigation sets, the navigation should only take up a single line on the desktop-narrow view (960 px wide).  This is the layout that is one smaller than the widest layout.
+	>use this region to provide top level navigation for the page.  
+	>no classes are needed for this region.  simply put everything in an unsorted list.  
+	>this navigation should reflect the associated department's top navigation  
+	>navigation snippets for commonly used departments are stored in the **top_navigation** folder  
+	>when creating custom navigation sets, the navigation should only take up a single line on the desktop-narrow view (960 px wide).  This is the layout that is one smaller than the widest layout.  
 
 + page content
-++ use this region for the main page content.
-++ use the guidelines below for formatting content for this region.
+	>use this region for the main page content.  
+	>use the guidelines below for formatting content for this region.  
 
 
 Page Content Formatting Guidelines
@@ -36,7 +36,7 @@ Page Content Formatting Guidelines
 ###Tables###
 Tables do not work well in mobile layouts and should never be used to layout content on a page.  If a page is presenting tabular data, then a table should be used but be aware that a mobile screen will shrink this table down to 320 pixels wide and very few tables look good at this width.
 
-If you are putting content on a page that needs to have a table at a size larger than 320 pixels, wrap your table tags in a <div class="overflow-table">[...]</div>.  This div will allow a table to maintain it's original size and scroll to the right in mobile view.
+If you are putting content on a page that needs to have a table at a size larger than 320 pixels, wrap your table tags in a `<div class="overflow-table">[...]</div>`.  This div will allow a table to maintain it's original size and scroll to the right in mobile view.
 
 Avoid putting images in tables whenever possible.  Images within tables are handled differently across all browsers since there is not a W3C specification for images in non-block-level elements.  If you do need to put an image in a table, be sure to test it in a mobile layout before deploying.
 
@@ -85,29 +85,20 @@ When it makes sense to have some form elements appear in a multi-column layout, 
 Using this floating method will cause the elements to align in a column when space is available and in a row when space is not.
 
 **Additional form classes**, the element they are typically applied to and their function:
-+ form\_indent: (block) 10px left margin
-+ form\_indent\_double: 30px (block) left margin
-+ form\_indent\_triple: 50px (block) left margin
-+ form\_border\_indent: (block) 10px left margin with left dotted border
-+ form\_border\_indent\_double: (block) 30px left margin with left dotted border
-+ form\_border\_indent\_triple: (block) 50px left margin with left dotted border
-+ form\_optional: (block) 10px left padding with left dashed border
-+ form\_l\_float: (block) left floated block with 10px left padding
-+ form\_clear: (block) clear all block floats
-+ form\_field\_spaced: (inline) 70px wide space {used for aligning labels and form fields on the same line -- see my adventure form}
-+ form\_note: (inline) 80% font size, italic
-+ form\_no\_indent: (block) 0px margin
-+ form\_error: (inline) red, italic, hidden by default {used for jQuery validation}
-+ form\_required\_item: (inline) red, italic {used for required asterisk}
-+ form\_hidden: (block) hidden by default {used for jQuery toggle}
++ form\_indent: `block` 10px left margin
++ form\_indent\_double: 30px `block` left margin
++ form\_indent\_triple: 50px `block` left margin
++ form\_border\_indent: `block` 10px left margin with left dotted border
++ form\_border\_indent\_double: `block` 30px left margin with left dotted border
++ form\_border\_indent\_triple: `block` 50px left margin with left dotted border
++ form\_optional: `block` 10px left padding with left dashed border
++ form\_l\_float: `block` left floated block with 10px left padding
++ form\_clear: `block` clear all block floats
++ form\_field\_spaced: `inline` 70px wide space {used for aligning labels and form fields on the same line -- see my adventure form}
++ form\_note: `inline` 80% font size, italic
++ form\_no\_indent: `block` 0px margin
++ form\_error: `inline` red, italic, hidden by default {used for jQuery validation}
++ form\_required\_item: `inline` red, italic {used for required asterisk}
++ form\_hidden: `block` hidden by default {used for jQuery toggle}
 
-[Block level elements][] included `<p>`, `<h1>`, `<ul>`, and `<div>`.  [Inline elements][] include `<span>`, `<strong>` and `<a>`.
-
-
-
-
-
-
-
-[Block level elements](http://www.w3schools.com/html/html_blocks.asp)
-[Inline elements](http://www.w3schools.com/html/html_blocks.asp)
+[Block level elements](http://www.w3schools.com/html/html_blocks.asp) included `<p>`, `<h1>`, `<ul>`, and `<div>`.  Inline elements include `<span>`, `<strong>` and `<a>`.
