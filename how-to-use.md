@@ -64,7 +64,7 @@ Forms should be laid out in a single column layout when the form label appearing
 	**Address**
 	[Input Field]
 
-Forms laid out in this fashion are easier for a user to read and work best in mobile layouts.
+Forms laid out in this fashion are easier for a user to read and work best in mobile layouts.  [This sample form shows the standard layout to be used for NMU forms](http://www.nmu.edu/business/node/189).
 
 When it makes sense to have some form elements appear in a multi-column layout, use the *form_l_float* class on the containing blocks to achieve this effect.  A div with the *form_clear* class should appear at the end of the floated elements.
 
