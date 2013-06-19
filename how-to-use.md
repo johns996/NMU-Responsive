@@ -29,6 +29,13 @@ It is **strongly** recommended that edits are only applied to the following regi
 	>use this region for the main page content.  
 	>use the guidelines below for formatting content for this region.  
 
+I also **strongly** suggest that any pages using this template use the CSS and JS files stored on the NMU web server as opposed to creating your own local copies.  By using the NMU web server files, you'll be able to get any tweaks and fixes we apply as soon as they are applied.  Since we're still in the process of rolling out the responsive theme, these fixes may be critical to the functionality of our pages across all browsers.  
+
+CSS and JS files are referenced using a protocol-relative method allowing them to be served up via http or https depending on the requesting scheme.  This is done by omitting the *http:* or *https:* as demonstrated in the following example.
+
+`<link type="text/css" rel="stylesheet" href="//www.nmu.edu/sites/all/themes/omega_nmu/css/global.css" media="all" />`
+
+The one limitation when using this method is that pages being tested on a local connection (localhost) will not be able to determine the scheme and will not find the file.    
 
 Page Content Formatting Guidelines
 ----------------------------------
@@ -49,7 +56,7 @@ Never use images to represent something that could be conveyed with text.  If th
 
 Always resize an image to the dimensions it will be displayed at using an image resizing program.  Using the width/height tag to size an image will not change it's physical size, instead it will just shrink the image down in the browser window.  This will force the user to download more data than needed and subsequently slow down a user's web experience.
 
-Images stored on the NMU server can be referenced using a protocol-agnostic method allowing them to be served up via http or https depending on the requesting connection.  This is done by omitting the *http:* or *https:* as demonstrated in the following example.
+Images stored on the NMU server can be referenced using a protocol-relative method allowing them to be served up via http or https depending on the requesting connection.  This is done by omitting the *http:* or *https:* as demonstrated in the following example.
 
 `<img src="//www.nmu.edu/sites/all/themes/omega_nmu/images/nmu_logo_white.png" alt="NMU Logo" title="Northern Michigan University" width="188" height"71" />`
 
