@@ -4,30 +4,30 @@ NMU-Responsive: How To Use
 This *template* is  just a boilerplate file to be used on pages and forms that can't be integrated in NMU's Drupal system.  It is designed to emulate the NMU-Responsive theme output so the markup may be a bit bloated in places but this is done to ensure that one set of styles can be used for the NMU site and any pages using this template.
 
 It is **strongly** recommended that edits are only applied to the following regions:
--page title
---use this region to identify your pages in bookmarks and search engines.
---it should always follow the format: Page Name | Northern Michigan University
---or using the a department's name: Page Name | NMU Administrative Information Technology
++ page title
+	>use this region to identify your pages in bookmarks and search engines.
+	>it should always follow the format: Page Name | Northern Michigan University
+	>or using the a department's name: Page Name | NMU Administrative Information Technology
 
--page branding
---use this region to identify the department associated with the content
---this region will also contain links back to the department's homepage and the university's homepage
---use the class **main_title** for the main page title
---use the class **sub_titles** for the department homepage link and the NMU link
---these classes are read by the page's javascript and used in the mobile layout
----there should only be one main title on any page
----only the first sub title element will be read and stored for the mobile home link
++ page branding
++ + use this region to identify the department associated with the content
+++ this region will also contain links back to the department's homepage and the university's homepage
+++ use the class **main_title** for the main page title
+++ use the class **sub_titles** for the department homepage link and the NMU link
+++ these classes are read by the page's javascript and used in the mobile layout
++++there should only be one main title on any page
++++only the first sub title element will be read and stored for the mobile home link
 
--top navigation
---use this region to provide top level navigation for the page.
---no classes are needed for this region.  simply put everything in an unsorted list.
---this navigation should reflect the associated department's top navigation
---navigation snippets for commonly used departments are stored in the **top_navigation** folder
---when creating custom navigation sets, the navigation should only take up a single line on the desktop-narrow view (960 px wide).  This is the layout that is one smaller than the widest layout.
++ top navigation
+++ use this region to provide top level navigation for the page.
+++ no classes are needed for this region.  simply put everything in an unsorted list.
+++ this navigation should reflect the associated department's top navigation
+++ navigation snippets for commonly used departments are stored in the **top_navigation** folder
+++ when creating custom navigation sets, the navigation should only take up a single line on the desktop-narrow view (960 px wide).  This is the layout that is one smaller than the widest layout.
 
--page content
---use this region for the main page content.
---use the guidelines below for formatting content for this region.
++ page content
+++ use this region for the main page content.
+++ use the guidelines below for formatting content for this region.
 
 
 Page Content Formatting Guidelines
@@ -85,21 +85,21 @@ When it makes sense to have some form elements appear in a multi-column layout, 
 Using this floating method will cause the elements to align in a column when space is available and in a row when space is not.
 
 **Additional form classes**, the element they are typically applied to and their function:
--form\_indent: (block) 10px left margin
--form\_indent\_double: 30px (block) left margin
--form\_indent\_triple: 50px (block) left margin
--form\_border\_indent: (block) 10px left margin with left dotted border
--form\_border\_indent\_double: (block) 30px left margin with left dotted border
--form\_border\_indent\_triple: (block) 50px left margin with left dotted border
--form\_optional: (block) 10px left padding with left dashed border
--form\_l\_float: (block) left floated block with 10px left padding
--form\_clear: (block) clear all block floats
--form\_field\_spaced: (inline) 70px wide space {used for aligning labels and form fields on the same line -- see my adventure form}
--form\_note: (inline) 80% font size, italic
--form\_no\_indent: (block) 0px margin
--form\_error: (inline) red, italic, hidden by default {used for jQuery validation}
--form\_required\_item: (inline) red, italic {used for required asterisk}
--form\_hidden: (block) hidden by default {used for jQuery toggle}
++ form\_indent: (block) 10px left margin
++ form\_indent\_double: 30px (block) left margin
++ form\_indent\_triple: 50px (block) left margin
++ form\_border\_indent: (block) 10px left margin with left dotted border
++ form\_border\_indent\_double: (block) 30px left margin with left dotted border
++ form\_border\_indent\_triple: (block) 50px left margin with left dotted border
++ form\_optional: (block) 10px left padding with left dashed border
++ form\_l\_float: (block) left floated block with 10px left padding
++ form\_clear: (block) clear all block floats
++ form\_field\_spaced: (inline) 70px wide space {used for aligning labels and form fields on the same line -- see my adventure form}
++ form\_note: (inline) 80% font size, italic
++ form\_no\_indent: (block) 0px margin
++ form\_error: (inline) red, italic, hidden by default {used for jQuery validation}
++ form\_required\_item: (inline) red, italic {used for required asterisk}
++ form\_hidden: (block) hidden by default {used for jQuery toggle}
 
 [Block level elements][] included `<p>`, `<h1>`, `<ul>`, and `<div>`.  [Inline elements][] include `<span>`, `<strong>` and `<a>`.
 
