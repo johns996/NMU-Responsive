@@ -7,12 +7,13 @@ This repository is managed by Eric Johnson in the Communications and Marketing o
 
 Steps to Create/Update this Rip
 -------------------------------
+These steps are here primarily for Eric to use in the creation and updating of this theme.  Knowing what has been removed from the "standard" page will also assist in bug tracking.
 
 1. Go to: http://ericjohnpc.nmu.edu/node/294
 2. Run: drush vset preprocess_css 0 --yes; drush vset preprocess_js 0 --yes
 3. Copy source
 4. Run: drush vset preprocess_css 1 --yes; drush vset preprocess_js 1 --yes
-5. Paste the source into BBEdit.  Do: Markup > Utalities > Format... > Pretty Print.  This should result in 377 lines.
+5. Paste the source into BBEdit.  Do: Markup > Utilities > Format... > Pretty Print.  This should result in 377 lines.
 6. Find and replace: src="/sites  >>  src="//www.nmu.edu/sites
 7. Find and replace (grep): @import url\("(.*?)\?xxxxxx"\);  >>  <link type="text/css" rel="stylesheet" href="\1" media="all" />
 8. Find and replace: <a href="/ >> <a href="//www.nmu.edu/
