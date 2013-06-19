@@ -36,7 +36,7 @@ Page Content Formatting Guidelines
 ###Tables###
 Tables do not work well in mobile layouts and should never be used to layout content on a page.  If a page is presenting tabular data, then a table should be used but be aware that a mobile screen will shrink this table down to 320 pixels wide and very few tables look good at this width.
 
-If you are putting content on a page that needs to have a table at a size larger than 320 pixels, wrap your table tags in a <div class="overflow-table">[...]</div>.  This div will allow a table to maintain it's original size and scroll to the right in mobile view.
+If you are putting content on a page that needs to have a table at a size larger than 320 pixels, wrap your table tags in a `<div class="overflow-table">[...]</div>`.  This div will allow a table to maintain it's original size and scroll to the right in mobile view.
 
 Avoid putting images in tables whenever possible.  Images within tables are handled differently across all browsers since there is not a W3C specification for images in non-block-level elements.  If you do need to put an image in a table, be sure to test it in a mobile layout before deploying.
 
