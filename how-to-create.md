@@ -8,14 +8,16 @@ These steps are here primarily for Eric to use in the creation and updating of t
 3. Copy source
 4. Run: `drush vset preprocess_css 1 --yes; drush vset preprocess_js 1 --yes`
 5. Paste the source into BBEdit.  Do: Markup > Utilities > Format... > Pretty Print.  This should result in 377 lines.
-6. Find and replace: src="/sites  >>  src="//www.nmu.edu/sites
-7. Find and replace (grep): @import url\("(.*?)\?xxxxxx"\);  >>  <link type="text/css" rel="stylesheet" href="\1" media="all" />
-8. Find and replace: <a href="/ >> <a href="//www.nmu.edu/
-9. Find and replace: http://www.nmu.edu >>  //www.nmu.edu
-10. Find and replace (grep): <style type="text/css" media="all">|</style> >>  [nothing]
-11. Find (grep): <style type="text/css" media=".*?">
-12. Manually replace the media property for child elements of the style tag found above.  Remove those media elements when done.
-13. Find and replace: ?xxxxxx >>  [nothing]
+6. Find and replace: `src="/sites`  >>  `src="//www.nmu.edu/sites`
+7. Find and replace (grep): `@import url\("(.*?)\?xxxxxx"\);`  >>  `<link type="text/css" rel="stylesheet" href="\1" media="all" />`
+  >where xxxxxx is the cache salt
+8. Find and replace: `<a href="/` >> `<a href="//www.nmu.edu/`
+9. Find and replace: `http://www.nmu.edu` >>  `//www.nmu.edu`
+10. Find and replace (grep): `<style type="text/css" media="all">|</style>` >>  `[nothing]`
+11. Find (grep): `<style type="text/css" media=".*?">`
+  >Manually replace the media property for child elements of the style tag found above.  Remove those media elements when done.
+13. Find and replace: `?xxxxxx` >>  `[nothing]`
+  >where xxxxxx is the cache salt
 14. Remove the jquery.extend settings
 15. Remove omega-mediaqueries.js
 16. Remove panels.js
