@@ -5,29 +5,29 @@ This *template* is  just a boilerplate file to be used on pages and forms that c
 
 It is **strongly** recommended that edits are only applied to the following regions:
 + page title
-	use this region to identify your pages in bookmarks and search engines.  
-	it should always follow the format: Page Name | Northern Michigan University  
-	or using the a department's name: Page Name | NMU Administrative Information Technology  
+	>use this region to identify your pages in bookmarks and search engines.  
+	>it should always follow the format: Page Name | Northern Michigan University  
+	>or using the a department's name: Page Name | NMU Administrative Information Technology  
 
 + page branding
-+ + use this region to identify the department associated with the content
-++ this region will also contain links back to the department's homepage and the university's homepage
-++ use the class **main_title** for the main page title
-++ use the class **sub_titles** for the department homepage link and the NMU link
-++ these classes are read by the page's javascript and used in the mobile layout
-+++there should only be one main title on any page
-+++only the first sub title element will be read and stored for the mobile home link
+	>use this region to identify the department associated with the content  
+	>this region will also contain links back to the department's homepage and the university's homepage  
+	>use the class **main_title** for the main page title  
+	>use the class **sub_titles** for the department homepage link and the NMU link  
+	>these classes are read by the page's javascript and used in the mobile layout  
+	>there should only be one main title on any page  
+	>only the first sub title element will be read and stored for the mobile home link  
 
 + top navigation
-++ use this region to provide top level navigation for the page.
-++ no classes are needed for this region.  simply put everything in an unsorted list.
-++ this navigation should reflect the associated department's top navigation
-++ navigation snippets for commonly used departments are stored in the **top_navigation** folder
-++ when creating custom navigation sets, the navigation should only take up a single line on the desktop-narrow view (960 px wide).  This is the layout that is one smaller than the widest layout.
+	>use this region to provide top level navigation for the page.  
+	>no classes are needed for this region.  simply put everything in an unsorted list.  
+	>this navigation should reflect the associated department's top navigation  
+	>navigation snippets for commonly used departments are stored in the **top_navigation** folder  
+	>when creating custom navigation sets, the navigation should only take up a single line on the desktop-narrow view (960 px wide).  This is the layout that is one smaller than the widest layout.  
 
 + page content
-++ use this region for the main page content.
-++ use the guidelines below for formatting content for this region.
+	>use this region for the main page content.  
+	>use the guidelines below for formatting content for this region.  
 
 
 Page Content Formatting Guidelines
