@@ -101,4 +101,4 @@ Using this floating method will cause the elements to align in a column when spa
 + form\_required\_item: (inline) red, italic {used for required asterisk}
 + form\_hidden: (block) hidden by default {used for jQuery toggle}
 
-[Block level elements](http://www.w3schools.com/html/html_blocks.asp) included `<p>`, `<h1>`, `<ul>`, and `<div>`.  [Inline elements][] include `<span>`, `<strong>` and `<a>`.
+[Block level elements](http://www.w3schools.com/html/html_blocks.asp) included `<p>`, `<h1>`, `<ul>`, and `<div>`.  Inline elements include `<span>`, `<strong>` and `<a>`.
