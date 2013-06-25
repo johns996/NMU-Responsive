@@ -18,16 +18,17 @@ These steps are here primarily for Eric to use in the creation and updating of t
   *Manually replace the media property for child elements of the style tag found above.  Remove those media elements when done.*
 13. Find and replace: `?xxxxxx` >>  `[nothing]`  
   *where xxxxxx is the cache salt*
-14. Remove the jquery.extend settings
-15. Remove omega-mediaqueries.js
-16. Remove panels.js
-17. Remove google\_analytics\_reports.js
-18. Remove drupal.js
-19. Remove jquery.once.js
-20. Remove all /system/ and /modules/ CSS files
-21. Remove shortlink tag
-22. Remove mega generator tag
-23. Remove canonical tag
-24. Remove skip-link div
-25. Add Comments for easy finding: page title, page branding, top navigation and page content.
-26. Add google analytics tracking code from profile UA-27629684-6.
+14. Find and replace: `src="http://` >> `src="//`
+15. Remove the jquery.extend settings
+16. Remove omega-mediaqueries.js
+17. Remove panels.js
+18. Remove google\_analytics\_reports.js
+19. Remove drupal.js
+20. Remove jquery.once.js
+21. Remove all /system/ and /modules/ CSS files
+22. Remove shortlink tag
+23. Remove mega generator tag
+24. Remove canonical tag
+25. Remove skip-link div
+26. Add Comments for easy finding: page title, page branding, top navigation and page content.
+27. Add google analytics tracking code from profile UA-27629684-6.
