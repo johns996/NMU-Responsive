@@ -109,3 +109,23 @@ Using this floating method will cause the elements to align in a column when spa
 + form\_hidden: `block` hidden by default {used for jQuery toggle}
 
 [Block level elements](http://www.w3schools.com/html/html_blocks.asp) included `<p>`, `<h1>`, `<ul>`, and `<div>`.  Inline elements include `<span>`, `<strong>` and `<a>`.
+
+###Grid Layout###
+This framework comes with the 960 grid system implemented.  To use this grid when laying out a series of columns on a page, follow this type of <div> structure.
+
+	<div class="grid-reset">
+		<div class="grid-2">
+			two columns wide
+		</div>
+		<div class="grid-3">
+			three columns wide
+		</div>
+		<div class="grid-3">
+			three columns wide
+		</div>
+		<div class="grid-4">
+			four column wide
+		</div>
+	</div>
+
+Any number of grid <div>s can be added, but the total column width cannot exceed 12 columns.
